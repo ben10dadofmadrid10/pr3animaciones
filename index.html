@@ -1,0 +1,39 @@
+<html>
+
+<head>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicio 3 - Tarjeta 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>🃏 Ejercicio 3: Tarjeta con giro 3D</h2>
+
+    <div id="tarjeta" class="tarjeta">
+      <div class="cara frente">Pasa el mouse aquí</div>
+      <div class="cara atras">🎉 Mensaje secreto 🎉</div>
+    </div>
+
+    <footer>Animaciones DOM | Ejercicio 3</footer>
+  </div>
+
+  <script>
+    let tarjeta = document.getElementById("tarjeta");
+
+    tarjeta.onmouseover = function () {
+      tarjeta.style.transform = "rotateY(180deg)";
+      console.log("Tarjeta girada: mouse encima ✅");
+    }
+
+    tarjeta.onmouseout = function () {
+      tarjeta.style.transform = "rotateY(0)";
+      console.log("Tarjeta volvió a su posición ✅");
+    }
+
+    console.log("Script cargado correctamente → Ejercicio 3 listo");
+  </script>
+
+</body>
+</html>
